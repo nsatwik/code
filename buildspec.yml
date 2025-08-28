@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t nginx:myimage1 
+      - docker build -t nginx:myimage1 .
       - docker tag nginx:myimage1 public.ecr.aws/y1u7h4z0/my-repo:myimage1      
   post_build:
     commands:
