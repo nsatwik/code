@@ -10,7 +10,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t nginx:my-image-V1 .
-      - docker tag nginx:myimage-V1 public.ecr.aws/y1u7h4z0/fridaydocker:my-image-V1
+      - docker tag nginx:my-image-V1 public.ecr.aws/y1u7h4z0/fridaydocker:my-image-V1
   post_build:
     commands:
       - echo Build completed on `date`
