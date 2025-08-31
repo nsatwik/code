@@ -9,10 +9,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t nginx:latest .
-      - docker tag nginx:latest public.ecr.aws/y1u7h4z0/fridaydocker:latest
+      - docker build -t sunday .
+      - docker tag sunday:latest public.ecr.aws/y1u7h4z0/sunday:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push public.ecr.aws/y1u7h4z0/fridaydocker:latest
+      - docker push public.ecr.aws/y1u7h4z0/sunday:latest
