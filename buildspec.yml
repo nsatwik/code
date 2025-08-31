@@ -15,4 +15,4 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push public.ecr.aws/y1u7h4z0/fridaydocker:latest
+      - docker push public.ecr.aws/y1u7h4z0/fridaydocker:my-image-V1
