@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t nginx:latest .
+      - docker buildx build --platform linux/amd64 -t nginx:latest -f dockerfile . .
       - docker tag nginx:latest 666203385715.dkr.ecr.ap-south-1.amazonaws.com/sunday:latest
   post_build:
     commands:
